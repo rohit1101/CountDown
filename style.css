@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://images.pexels.com/photos/2682122/pexels-photo-2682122.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+select {
+  margin: 4rem 1rem;
+}
+
+.dis {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: rgba(250, 250, 250, 1);
+  animation-name: opa;
+  animation-duration: 0.5s;
+  transition: opacity 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes opa {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.days,
+.hours,
+.mins,
+.sec {
+  margin: 0 3rem;
+}
+
+.days p,
+.hours p,
+.mins p,
+.sec p {
+  margin: 1rem 0;
+}
+
+h1 {
+  color: darkkhaki;
+  text-shadow: 1px 1px 1px #c7ffed;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
